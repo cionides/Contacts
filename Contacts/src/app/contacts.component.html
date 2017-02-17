@@ -1,10 +1,21 @@
-<!DOCTYPE html>
-<html>
-<head>
-<meta charset="UTF-8">
-<title>Insert title here</title>
-</head>
-<body>
-
-</body>
-</html>
+ <h2>My Contacts</h2>
+ <!-- <ul class="contacts">
+    <li *ngFor="let contact of contacts"
+      [class.selected]="contact === selectedContact"
+      (click)="onSelect(contact)">
+      <span class="badge">{{contact.id}}</span> {{contact.name}}
+    </li>
+  </ul>
+  <div *ngIf="selectedContact">
+   <h2>
+      {{selectedContact.name}} is my contact
+    </h2>
+    <button (click)="gotoDetail()">View Details</button>
+</div>-->
+<div layout-md="column">
+<ul class="contacts">
+    <li *ngFor="let contact of contacts" [routerLink]="['/contacts/', contact.id]" class="col-1-4">
+     <span class="badge">{{contact.id}}</span> {{contact.name}}
+    </li>
+  </ul>
+</div>

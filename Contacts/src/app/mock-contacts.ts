@@ -1,14 +1,16 @@
 import { Contact } from './contact';
 
 export const CONTACTS: Contact[] = [
-  { id: 11, name: 'Mr. Nice' },
-  { id: 12, name: 'Narco' },
-  { id: 13, name: 'Bombasto' },
-  { id: 14, name: 'Celeritas' },
-  { id: 15, name: 'Magneta' },
-  { id: 16, name: 'RubberMan' },
-  { id: 17, name: 'Dynama' },
-  { id: 18, name: 'Dr IQ' },
-  { id: 19, name: 'Magma' },
-  { id: 20, name: 'Tornado' }
+  { id: 1, name: 'Christina', team: 'Epic' },
+  { id: 2, name: 'Prasanna', team: 'Epic' },
+  { id: 3, name: 'Steve' , team: 'Epic'},
+  { id: 4, name: 'Annette' , team: 'Epic'},
+  { id: 5, name: 'Jen' , team: 'Epic'},
+  { id: 6, name: 'Laurence', team: 'Epic' },
+  { id: 7, name: 'Brian' , team: 'Epic'},
+  { id: 8, name: 'Ninad', team: 'Epic' },
+  { id: 9, name: 'Kunal', team: 'Epic' },
+  { id: 10, name: 'Jane' , team: 'Epic'},
+  { id: 11, name: 'William' , team: 'Epic'}
+
 ];

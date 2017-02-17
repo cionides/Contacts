@@ -12,12 +12,12 @@ import { Router } from '@angular/router'
 })
 
 export class ContactsComponent implements OnInit {
-
-
   contacts: Contact[];
   selectedContact: Contact;
 
-  constructor(private contactService: ContactService, private router: Router) { }
+  constructor(
+    private router: Router,
+    private contactService: ContactService) { }
 
   getContacts(): void {
     this.contactService.getContacts().then(contacts => this.contacts = contacts);
@@ -29,10 +29,9 @@ export class ContactsComponent implements OnInit {
 
   onSelect(contact: Contact): void {
     this.selectedContact = contact;
-}
+  }
 
   gotoDetail(): void {
-  this.router.navigate(['/detail', this.selectedContact.id]);
-}
-
+    this.router.navigate(['/detail', this.selectedContact.id]);
+  }
 }

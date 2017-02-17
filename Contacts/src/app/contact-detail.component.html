@@ -1,10 +1,24 @@
 <div *ngIf="contact">
-  <h2>{{contact.name}} details!</h2>
+  <h2>{{contact.name}}</h2>
   <div>
     <label>id: </label>{{contact.id}}</div>
   <div>
     <label>name: </label>
     <input [(ngModel)]="contact.name" placeholder="name" />
   </div>
-  <button (click)="goBack()">Back</button>
-</div>
+  <div>
+    <label>team: </label>
+    <input [(ngModel)]="contact.team" placeholder="team" />
+  </div>
+  
+<!--</div>
+  <div flex-xs flex-gt-xs="50" layout="column">
+    <md-card class="contact-card">
+      <md-card-header>
+        <md-card-subtitle>{{contact.team}}</md-card-subtitle>
+      </md-card-header>
+      <md-card-content>Main Content</md-card-content>
+    </md-card>
+ </div>-->
+
+<button (click)="goBack()">Back</button>
